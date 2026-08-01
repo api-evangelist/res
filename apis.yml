@@ -1,7 +1,25 @@
 aid: res
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/res.png
 name: Res
-description: 'Res is a company surfaced as a portfolio company of homebrew and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Res (ResQ) is an AI-powered operations platform for the service economy, connecting
+  restaurants, hospitality groups, and facilities-management teams with vetted trades vendors to
+  manage repair-and-maintenance work orders end to end. The platform covers work-order intake and
+  dispatch, vendor sourcing and communication, invoicing and payments, and reporting across trades
+  such as HVAC, plumbing, refrigeration, and electrical. Backed by Homebrew and surfaced through the
+  API Evangelist network, ResQ operates a web and mobile SaaS product; it publishes no public
+  developer API, OpenAPI definitions, SDKs, or webhook surface at this time, so this profile captures
+  company identity, website properties, and probed domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/res/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,19 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Facilities Management
+- Field Service
+- Work Orders
+- Trades
+- Maintenance
+- Hospitality
+- Restaurants
+- SaaS
+- Vendor Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +49,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/res-domain-security.yml
 - type: Website
   url: https://www.getresq.com
+- type: Blog
+  url: https://www.getresq.com/blog
+- type: Pricing
+  url: https://www.getresq.com/pricing
+- type: Support
+  url: https://support.getresq.com/
+- type: HelpCenter
+  url: https://support.getresq.com/
+- type: TermsOfService
+  url: https://www.getresq.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.getresq.com/privacy-policy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
